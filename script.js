@@ -143,5 +143,3 @@ window.onload = () => {
     alert("Speech Synthesis is not supported");
   }
 };
-
-//-------------------------------//
