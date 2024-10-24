@@ -1,69 +1,88 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <script src="script.js" defer></script>
+    <title>Converter</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-  <script src="script.js" defer></script>
-  <title>Converter</title>
-</head>
+  <body>
+    <nav id="navbar">
+      <a class="navbar-logo" href="#home"
+        ><h3 class="logo-text">Con<span>verter</span></h3></a
+      >
+    </nav>
+    <div class="container">
+      <div class="home-section" id="home">
+        <button
+          onclick="window.location.href='textToSpeech.html';"
+          class="home-btn primary-btn-theme"
+        >
+          Text to Voice
+        </button>
+        <button
+          onclick="window.location.href='speechToText.html';"
+          class="home-btn primary-btn-theme"
+        >
+          Speech to Text
+        </button>
+      </div>
+      <div class="text-container">
+        <div class="about-section primary-container-theme" id="about">
+          <h3 class="title-text">About</h3>
+          <p class="para-text">
+            Welcome to our innovative website designed to seamlessly convert
+            text to speech and speech to text. This tool provides a
+            user-friendly interface for transforming written text into
+            natural-sounding speech and accurately converting spoken words into
+            written text. Ideal for a variety of applications, from
+            accessibility solutions to enhancing productivity, our platform
+            leverages advanced technology to deliver high-quality results.
+            Explore the convenience and versatility of our text and speech
+            conversion services today.
+          </p>
+        </div>
 
-<body>
-<div class="Container" id="home">
-  <nav id="navbar">
-    <h3>Con<span>verter</span></h3>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about-section">About</a></li>
-      <li><a href="#service-section">Services</a></li>
-    </ul>
-  </nav>
-  
-  <div class="title">
-  <a class="text-a" href="textToSpeech.html"><button class="TextTOVoice"><h3 class="style-text">Text To<br>Speech</h3>
-  </button>
-  </a>
-  
-  <a class="text-a" href="speechToText.html"><button class="VoiceTOText"><h3 class="style-text">Speech<br>To Text</h3>
-  </button>
-  </a>
-  </div>
-  
-  <div id="about-section" class="about">
-    <h3>About</h3>
-    <p>&nbsp;&nbsp;&nbsp;-> Welcome to our innovative website designed to seamlessly convert text to speech and speech to text.
-      <br>&nbsp;&nbsp;&nbsp;-> This tool provides a user-friendly interface for transforming written text into natural-sounding speech and accurately converting spoken words into written text.
-      <br>&nbsp;&nbsp;-> Ideal for a variety of applications, from accessibility solutions to enhancing productivity, our platform leverages advanced technology to deliver high-quality results.
-      <br>&nbsp;&nbsp;&nbsp;-> Explore the convenience and versatility of our text and speech conversion services today.</p>
-  </div>
-  
-  <div id="service-section" class="service">
-    <h3>Services</h3>
-    <p>
-      <b>Text to Speech Conversion : </b><br>&nbsp;&nbsp;-> Convert written text into natural and expressive speech.
-                                         <br>&nbsp;&nbsp;-> Multiple language and voice options to choose from.<br><br>
-      <b>Speech to Text Conversion :</b><br>&nbsp;&nbsp;-> Accurately transcribe spoken words into written text.
-                                        <br>&nbsp;&nbsp;-> Supports a wide range of languages and dialects.
-    </p>
-  </div>
-  
-  <div class="foot">
-
-    <a href="https://www.instagram.com/_jk_santhanam_/" class="btnmm" id="resume"><i class="fa-brands fa-square-instagram"></i>
-    </a>
-    <a href="https://www.linkedin.com/in/santhana-krishnan-j-8b5345258/" class="btnmm" id="resume"><i class="fa-brands fa-linkedin"></i>
-    </a>
-    <a href="https://github.com/Santhanakrishnan05" class="btnmm" id="resume"><i class="fa-brands fa-github"></i>
-    </a>
-
-    <p class="fot">@Copyright - 2023</p>
-  </div>
-  
-</div>
-
-
-</body>
-
+        <div class="service-section primary-container-theme" id="service">
+          <h3 class="title-text">Services</h3>
+          <p class="para-text">
+            <b>Text to Speech Conversion : </b>
+            <br />
+            Convert written text into natural and expressive speech.
+            <br />
+            Multiple language and voice options to choose from.
+            <br />
+            <br />
+            <b>Speech to Text Conversion :</b>
+            <br />
+            Accurately transcribe spoken words into written text.
+            <br />
+            Supports a wide range of languages and dialects.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-section" id="footer">
+      <div class="footer-logo-container">
+        <a href="https://www.instagram.com/_jk_santhanam_/"
+          ><i
+            class="fa-brands fa-square-instagram instagram-logo footer-logo"
+          ></i>
+        </a>
+        <a href="https://www.linkedin.com/in/santhana-krishnan-j-8b5345258/"
+          ><i class="fa-brands fa-linkedin linkedin-logo footer-logo"></i>
+        </a>
+        <a href="https://github.com/Santhanakrishnan05"
+          ><i class="fa-brands fa-github github-logo footer-logo"></i>
+        </a>
+      </div>
+      <p class="footer-text">@Copyright - 2024</p>
+    </div>
+  </body>
 </html>

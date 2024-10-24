@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>SpeechToText</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
-  <title>SpeechToText</title>
-</head>
+  <body>
+    <div class="">
+      <nav id="navbar">
+        <a class="navbar-logo" href="index.html"
+          ><h3 class="logo-text">Con<span>verter</span></h3></a
+        >
+        <a class="navbar-link" href="index.html">Back</a>
+      </nav>
+      <div class="converter-section">
+        <div class="converter-container">
+          <h3 class="converter-title">Speech to text</h3>
+          <select
+            class="converter-voice-select primary-container-theme"
+            placeholder="Select the language"
+            id="voiceSelect"
+          ></select>
+          <textarea
+            class="converter-textarea primary-container-theme"
+            id="txt"
+            placeholder="Your speech will appear as text here"
+          ></textarea>
+          <div class="converter-btn-container">
+            <button class="converter-start-btn primary-btn-theme" id="start">
+              Start
+            </button>
 
-<body>
-<div class="Container2">
-  <nav id="navbar">
-    <h3>Con<span>verter</span></h3>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-    </ul>
-  </nav>
-  <div class="title1">
-  <div class="Con1">
-    <h3 class="t3">Speech to text</h3>
-    <select placeholder = "Select the language" id="voiceSelect"></select>
-    <textarea id="txt" placeholder="Your speech will appear as text here"></textarea>
-    
-    <button class="btn1" id="start">Start
-    </button>
-    
-    <button class="btn2" id="stop">Stop</button>
-    </button>
-  </div>
-  </div>
-</div>
-
-
-</body>
-
+            <button class="converter-stop-btn primary-btn-theme" id="stop">
+              Stop
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

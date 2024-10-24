@@ -1,45 +1,61 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <title>TextToSpeech</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <title>TextToSpeech</title>
-</head>
+  <body>
+    <div class="">
+      <nav id="navbar">
+        <a class="navbar-logo" href="index.html"
+          ><h3 class="logo-text">Con<span>verter</span></h3></a
+        >
+        <a class="navbar-link" href="index.html">Back</a>
+      </nav>
+      <div class="converter-section">
+        <div class="converter-container">
+          <h3 class="converter-title">Text To Speech</h3>
+          <select
+            class="converter-voice-select primary-container-theme"
+            placeholder="Select the language"
+            id="voiceSelect"
+          ></select>
+          <textarea
+            class="converter-textarea primary-container-theme"
+            id="txt"
+            placeholder="Enter the Text"
+          ></textarea>
+          <div class="converter-btn-container">
+            <button class="converter-resume-btn primary-btn-theme" id="resume">
+              <i class="fa-solid fa-play"></i>
+            </button>
 
-<body>
-<div class="Container1">
-  <nav id = "navbar">
-    <h3>Con<span>verter</span></h3>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-    </ul>
-  </nav>
-  <div class="title1">
-  <div class="Con1">
-    <h3 class="t3">Text To Speech</h3>
-    <select placeholder = "Select the language" id="voiceSelect"></select>
-    <textarea id="txt" placeholder="Enter the Text"></textarea>
-    
-    <button id="submit" class="button1">Tap to Convert
-    </button>
-    
-    <button class="btn" id="resume"><i class="fa-solid fa-play"></i>
-    </button>
-    
-    <button class="btn" id="pause"><i class="fa-solid fa-pause"></i>
-    </button>
-    
-    <button class="down" id="download"><i class="fa-solid fa-download"></i>
-    </button>
+            <button class="converter-pause-btn primary-btn-theme" id="pause">
+              <i class="fa-solid fa-pause"></i>
+            </button>
+
+            <button id="submit" class="converter-convert-btn primary-btn-theme">
+              Tap to Convert
+            </button>
+
+            <button
+              class="converter-download-btn primary-btn-theme"
+              id="download"
+            >
+              <i class="fa-solid fa-download"></i>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
-    </div>
-</div>
 
-<script src="script.js"></script>
-
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
